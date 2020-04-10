@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>How to make a choropleth map with Leaflet.js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="leaflet.css" />
+	<script src="leaflet.js"></script>
+  <script src="censustracts.js"></script>
+  <!-- statesData loaded from censustracts.js -->
+	<style type="text/css">
+	 	html, body, #map{
+	 		height: 100%;
+	 		padding: 0;
+	 		margin: 0;
+	 	}
+	</style>
+
+</head>
+<body>
+
+	<div id="map"></map>
+
+	<script type="text/javascript">
+
+  //https://leafletjs.com/reference-1.6.0.html
+  //View(<LatLng> center, <Number> zoom, <Zoom/pan options> options?)
+  //https://leafletjs.com/reference-1.6.0.html#zoom/pan-options
+	var map = L.map('map').setView([37.8, -96], 4);
+  // openstreetmap.org
+	//L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
+
+  //colorbrewer2.org  use this to setup list of colours
+  // ['#7f3b08','#b35806','#e08214','#fdb863','#fee0b6','#d8daeb','#b2abd2','#8073ac']
+	function getColor(d) {
+	    return d > 1000 ? '#800026' :
+	           d > 500  ? '#BD0026' :
+	           d > 200  ? '#E31A1C' :
+	           d > 100  ? '#FC4E2A' :
+	           d > 50   ? '#FD8D3C' :
+	           d > 20   ? '#FEB24C' :
+	           d > 10   ? '#FED976' :
+	                      '#FFEDA0';
+	}
+
+	function style(feature) {
+    /*
+      console.log("feature:", feature)
+      console.log("type:", feature['type'])
+      console.log("id : ", feature['id'])
+      console.log("properties:", feature['properties'])
+      console.log("properties.name:", feature['properties']['name'])
+      console.log("properties.density:", feature['properties']['density'])
+      console.log("geometry:", feature['geometry'])
+      console.log("geometry.type:", feature['geometry']['type'])
+      */
+	    return {
+	        fillColor: getColor(feature.properties.density),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+	L.geoJson(statesData, {style: style}).addTo(map);
+
+  console.log("statesData['type']:", statesData['type'])
+  console.log("statesData['features']:", statesData['features'])
+  console.log("statesData['features'].length:", statesData['features'].length)
+  console.log("statesData['features'][0]['type']:", statesData['features'][0]['type'])
+  console.log("statesData['features'][0]['id']:", statesData['features'][0]['id'])
+  console.log("statesData['features'][0]['properties']:", statesData['features'][0]['properties'])
+
+	</script>
+
+</body>
+</html>
