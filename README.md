@@ -26,5 +26,9 @@ https://openlayers.org/en/latest/examples/geojson.html
 
 
 
-many sets of data here 
+many sets of data here
 https://dev.socrata.com/consumers/getting-started.html
+
+
+scrape data from here
+https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States_by_population_density
