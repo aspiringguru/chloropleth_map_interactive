@@ -54,10 +54,21 @@ console.log("elem_country_code:", elem_country_code)
 console.log("elem_population:", elem_population)
 console.log("elem_SandP:", elem_SandP)
 // The svg
+// var element = d3.select('#myjumbo').node();
+// elem_width = element.getBoundingClientRect().width
+// elem_height = element.getBoundingClientRect().height
+// var svg = d3.select("#my_map"),
+//   width = elem_width,
+//   height = elem_height;
+
 //var svg = d3.select("svg"),
 var svg = d3.select("#my_map"),
   width = +svg.attr("width"),
   height = +svg.attr("height");
+
+console.log("svg = ", svg)
+console.log("svg width = ", width)
+console.log("svg height = ", height)
 
 // Map and projection
 var path = d3.geoPath();
