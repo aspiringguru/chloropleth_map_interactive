@@ -1,0 +1,155 @@
+Country,S&P,Moody's,Fitch,DBRS,TE,country_,name_,alpha-3
+Albania,B+,B1,,,26.0,albania,albania,ALB
+Andorra,BBB�,,BBB+,,62.0,andorra,andorra,AND
+Angola,CCC+,B3,B-,,23.0,angola,angola,AGO
+Argentina,SD,Ca�,CC,CC,12.0,argentina,argentina,ARG
+Armenia,,Ba3,BB-�,,16.0,armenia,armenia,ARM
+Aruba,BBB+,,BB�,,60.0,aruba,aruba,ABW
+Australia,AAA�,Aaa,AAA,AAA,100.0,australia,australia,AUS
+Austria,AA+,Aa1,AA+�,AAA,96.0,austria,austria,AUT
+Azerbaijan,BB+,Ba2,BB+,,50.0,azerbaijan,azerbaijan,AZE
+Bahamas,BB+�,Baa3,,,52.0,bahamas,bahamas,BHS
+Bahrain,B+,B2,BB-,,35.0,bahrain,bahrain,BHR
+Bangladesh,BB-,Ba3,BB-,,40.0,bangladesh,bangladesh,BGD
+Barbados,B-,Caa1,,,22.0,barbados,barbados,BRB
+Belarus,B,B3,B,,26.0,belarus,belarus,BLR
+Belgium,AA,Aa3,AA-�,AA (high),86.0,belgium,belgium,BEL
+Belize,B-,B3,,,20.0,belize,belize,BLZ
+Benin,B+,B2�,B,,32.0,benin,benin,BEN
+Bermuda,A+�,A2,,,78.0,bermuda,bermuda,BMU
+Bolivia,BB-�,B1�,B+�,,38.0,bolivia,,
+Bosnia and Herzegovina,B�,B3,,,27.0,bosnia and herzegovina,bosnia and herzegovina,BIH
+Botswana,BBB+,A2,,,72.0,botswana,botswana,BWA
+Brazil,BB-,Ba2,BB-,BB (low),42.0,brazil,brazil,BRA
+Bulgaria,BBB�,Baa2�,BBB�,,58.0,bulgaria,bulgaria,BGR
+Burkina Faso,B,,,,25.0,burkina faso,burkina faso,BFA
+Cambodia,,B2,,,30.0,cambodia,cambodia,KHM
+Cameroon,B�,B2,B,,30.0,cameroon,cameroon,CMR
+Canada,AAA,Aaa,AAA,AAA,99.0,canada,canada,CAN
+Cape Verde,B,,B�,,30.0,cape verde,,
+Cayman Islands,,Aa3,,,85.0,cayman islands,cayman islands,CYM
+Chile,A+,A1,A�,,78.0,chile,chile,CHL
+China,A+,A1,A+,A (high)�,80.0,china,china,CHN
+Colombia,BBB-�,Baa2,BBB-�,BBB�,57.0,colombia,colombia,COL
+Congo,CCC+�,Caa1,,,20.0,congo,congo,COG
+Costa Rica,B+�,B2,B+�,,35.0,costa rica,costa rica,CRI
+Croatia,BBB-,Ba2�,BBB-,,51.0,croatia,croatia,HRV
+Cuba,,Caa2,,,15.0,cuba,cuba,CUB
+Cyprus,BBB-,Ba2�,BBB-,BBB (low)�,50.0,cyprus,cyprus,CYP
+Czech Republic,AA-,Aa3,AA-,,83.0,czech republic,,
+Denmark,AAA,Aaa,AAA,AAA,100.0,denmark,denmark,DNK
+Dominican Republic,BB-,Ba3,BB-,,38.0,dominican republic,dominican republic,DOM
+Ecuador,CCC-�,Caa3�,C,,16.0,ecuador,ecuador,ECU
+Egypt,B,B2,B+,,30.0,egypt,egypt,EGY
+El Salvador,B-,B3�,B-,,25.0,el salvador,el salvador,SLV
+Estonia,AA-�,A1,AA-,AA (low),83.0,estonia,estonia,EST
+Ethiopia,B,B1�,B�,,31.0,ethiopia,ethiopia,ETH
+European Union,AA,Aaa,AAA,AAA,98.0,european union,,
+Fiji,BB-,Ba3,,,37.0,fiji,fiji,FJI
+Finland,AA+,Aa1,AA+,AA (high),96.0,finland,finland,FIN
+France,AA,Aa2,AA,AAA,92.0,france,france,FRA
+Gabon,,Caa1�,CCC,,26.0,gabon,gabon,GAB
+Georgia,BB,Ba2,BB,,43.0,georgia,georgia,GEO
+Germany,AAA,Aaa,AAA,AAA,100.0,germany,germany,DEU
+Ghana,B,B3�,B,,23.0,ghana,ghana,GHA
+Greece,BB-�,B1,BB�,BB (low)�,36.0,greece,greece,GRC
+Grenada,SD�,,,,,grenada,grenada,GRD
+Guatemala,BB-,Ba1,BB-,,45.0,guatemala,guatemala,GTM
+Honduras,BB-,B1,,,35.0,honduras,honduras,HND
+Hong Kong,AA+,Aa3,AA�,,91.0,hong kong,hong kong,HKG
+Hungary,BBB�,Baa3,BBB,,58.0,hungary,hungary,HUN
+Iceland,A,A2,A,,73.0,iceland,iceland,ISL
+India,BBB-,Baa2�,BBB-,BBB,57.0,india,india,IND
+Indonesia,BBB,Baa2,BBB,,58.0,indonesia,indonesia,IDN
+Iraq,B-,Caa1,B-,,25.0,iraq,iraq,IRQ
+Ireland,AA-,A2,A+,A (high)�,78.0,ireland,ireland,IRL
+Isle of Man,,Aa2�,,,90.0,isle of man,isle of man,IMN
+Israel,AA-,A1�,A+,,80.0,israel,israel,ISR
+Italy,BBB�,Baa3,BBB�,BBB (high),62.0,italy,italy,ITA
+Ivory Coast,,Ba3,B+�,,37.0,ivory coast,,
+Jamaica,B+,B2,B+,,33.0,jamaica,jamaica,JAM
+Japan,A+�,A1,A,A (high),77.0,japan,japan,JPN
+Jordan,B+,B1,BB-,,35.0,jordan,jordan,JOR
+Kazakhstan,BBB-,Baa3�,BBB,,56.0,kazakhstan,kazakhstan,KAZ
+Kenya,B+,B2,B+,,35.0,kenya,kenya,KEN
+Kuwait,AA-,Aa2,AA,,88.0,kuwait,kuwait,KWT
+Kyrgyzstan,NR,B2,,,30.0,kyrgyzstan,kyrgyzstan,KGZ
+Laos,,B3�,B-,,25.0,laos,,
+Latvia,A+,A3,A-,A (low)�,71.0,latvia,latvia,LVA
+Lebanon,SD,Ca,RD,,11.0,lebanon,lebanon,LBN
+Lesotho,,,B,,35.0,lesotho,lesotho,LSO
+Liechtenstein,AAA,,,,100.0,liechtenstein,liechtenstein,LIE
+Lithuania,A+,A3�,A,A�,73.0,lithuania,lithuania,LTU
+Luxembourg,AAA,Aaa,AAA,AAA,100.0,luxembourg,luxembourg,LUX
+Macau,,Aa3,AA�,,87.0,macau,,
+Macedonia,BB-,,BB+,,42.0,macedonia,,
+Malaysia,A-,A3,A-�,,66.0,malaysia,malaysia,MYS
+Maldives,,B2�,B�,,32.0,maldives,maldives,MDV
+Mali,,B3,,,,mali,mali,MLI
+Malta,A-,A2,A+�,A (high),75.0,malta,malta,MLT
+Mauritius,,Baa1�,,,65.0,mauritius,mauritius,MUS
+Mexico,BBB�,A3�,BBB,BBB (high)�,63.0,mexico,mexico,MEX
+Moldova,,B3,,,25.0,moldova,,
+Mongolia,B,B3,B,,26.0,mongolia,mongolia,MNG
+Montenegro,B+,B1,,,35.0,montenegro,montenegro,MNE
+Montserrat,BBB-,,,,55.0,montserrat,montserrat,MSR
+Morocco,BBB-,Ba1,BBB-,,53.0,morocco,morocco,MAR
+Mozambique,CCC+,Caa2,CCC,,14.0,mozambique,mozambique,MOZ
+Namibia,,Ba2,BB,,47.0,namibia,namibia,NAM
+Netherlands,AAA,Aaa,AAA,AAA,100.0,netherlands,netherlands,NLD
+New Zealand,AA�,Aaa,AA�,,93.0,new zealand,new zealand,NZL
+Nicaragua,B-,B3,B-,,26.0,nicaragua,nicaragua,NIC
+Niger,,B3,,,,niger,niger,NER
+Nigeria,B-,B2�,B�,,30.0,nigeria,nigeria,NGA
+Norway,AAA,Aaa,AAA,AAA,99.0,norway,norway,NOR
+Oman,BB-�,Ba2,BB�,,43.0,oman,oman,OMN
+Pakistan,B-,B3,B-,,25.0,pakistan,pakistan,PAK
+Panama,BBB+,Baa1,BBB�,,63.0,panama,panama,PAN
+Papua New Guinea,B,B2,,,30.0,papua new guinea,papua new guinea,PNG
+Paraguay,BB,Ba1,BB+,,46.0,paraguay,paraguay,PRY
+Peru,BBB+,A3,BBB+,,65.0,peru,peru,PER
+Philippines,BBB+,Baa2,BBB�,,61.0,philippines,philippines,PHL
+Poland,A-,A2,A-,A,71.0,poland,poland,POL
+Portugal,BBB�,Baa3�,BBB�,BBB (high),71.0,portugal,portugal,PRT
+Puerto Rico,D�,,,,0.0,puerto rico,puerto rico,PRI
+Qatar,AA-,Aa3,AA-,,85.0,qatar,qatar,QAT
+Republic of the Congo,B-�,Caa2,CCC,,20.0,republic of the congo,,
+Romania,BBB-�,Baa3,BBB-,,55.0,romania,romania,ROU
+Russia,BBB-,Baa3,BBB,,55.0,russia,,
+Rwanda,B+,B2,B+,,31.0,rwanda,rwanda,RWA
+San Marino,,,BBB-�,,55.0,san marino,san marino,SMR
+Saudi Arabia,A-,A1,A,,76.0,saudi arabia,saudi arabia,SAU
+Senegal,B+,Ba3,,,37.0,senegal,senegal,SEN
+Serbia,BB+�,Ba3�,BB+,,45.0,serbia,serbia,SRB
+Seychelles,,,BB,,40.0,seychelles,seychelles,SYC
+Singapore,AAA,Aaa,AAA,AAA,98.0,singapore,singapore,SGP
+Slovakia,A+,A2,A+,A (high),78.0,slovakia,slovakia,SVK
+Slovenia,AA-,Baa1�,A,A (high),75.0,slovenia,slovenia,SVN
+Solomon Islands,,B3,,,25.0,solomon islands,solomon islands,SLB
+South Africa,BB�,Ba1�,BB�,,48.0,south africa,south africa,ZAF
+South Korea,AA,Aa2,AA-,,86.0,south korea,,
+Spain,A,Baa1,A-,A�,70.0,spain,spain,ESP
+Sri Lanka,B�,B2,B�,,30.0,sri lanka,sri lanka,LKA
+St Vincent and the Grenadines,,B3,,,25.0,st vincent and the grenadines,,
+Suriname,CCC+�,B2,CCC,,26.0,suriname,suriname,SUR
+Swaziland,,B2�,,,30.0,swaziland,,
+Sweden,AAA,Aaa,AAA,AAA,99.0,sweden,sweden,SWE
+Switzerland,AAA,Aaa,AAA,AAA,100.0,switzerland,switzerland,CHE
+Taiwan,AA-,Aa3,AA-,,83.0,taiwan,,
+Tajikistan,B-,B3�,,,25.0,tajikistan,tajikistan,TJK
+Tanzania,,B1�,,,,tanzania,,
+Thailand,BBB+�,Baa1�,BBB+,,65.0,thailand,thailand,THA
+Togo,B,B3,,,30.0,togo,togo,TGO
+Trinidad and Tobago,BBB-,Ba1,,,55.0,trinidad and tobago,trinidad and tobago,TTO
+Tunisia,,B2,B+�,,31.0,tunisia,tunisia,TUN
+Turkey,B+,B1�,BB-,BB (high)�,36.0,turkey,turkey,TUR
+Uganda,B,B2,B+,,33.0,uganda,uganda,UGA
+Ukraine,B,Caa1�,B�,,26.0,ukraine,ukraine,UKR
+United Arab Emirates,AA,Aa2,AA,,90.0,united arab emirates,united arab emirates,ARE
+United Kingdom,AA,Aa2�,AA-�,AAA,92.0,united kingdom,,
+United States,AA+,Aaa,AAA,AAA,98.0,united states,,
+Uruguay,BBB,Baa2,BBB-�,BBB (low),55.0,uruguay,uruguay,URY
+Uzbekistan,BB-,B1,BB-,,40.0,uzbekistan,uzbekistan,UZB
+Venezuela,SD,WR,RD,,11.0,venezuela,,
+Vietnam,BB,Ba3�,BB,,43.0,vietnam,,
+Zambia,CCC�,Ca,CCC�,,30.0,zambia,zambia,ZMB

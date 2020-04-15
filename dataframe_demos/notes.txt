@@ -1,0 +1,7 @@
+
+
+https://gmousse.gitbooks.io/dataframe-js/#installation
+D:\2020\coding\world_map_demo\dataframe_demos
+cd /mnt/d/2020/coding/world_map_demo/dataframe_demos/
+
+https://codepen.io/kurt_cagle/post/dataframes-come-to-javascript

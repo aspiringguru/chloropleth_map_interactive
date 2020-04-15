@@ -1,0 +1,36 @@
+
+https://www.iban.com/country-codes
+nb: ISO 3166
+
+translate geojson format in file world_population.geojson
+to format used in censustracts.js
+
+not ideal but have existing choropleth map working
+
+var statesData = {"type":"FeatureCollection","features":[
+{"type":"Feature","id":"01","properties":{"name":"Alabama","density":94.65},
+  "geometry":{"type":"Polygon","coordinates": blah
+
+
+cd /mnt/d/2020/coding/world_map_demo/world_map_example
+conda deactivate
+deactivate
+#python3 -m venv env
+source env/bin/activate
+
+python -m http.server 5000
+
+pip install --upgrade pip
+
+pip install matplotlib
+pip install pillow
+pip install pandas
+pip install xlrd openpyxl
+pip install geojson
+#https://github.com/jazzband/geojson
+
+
+
+#d3 add legend to chart
+https://www.d3-graph-gallery.com/graph/custom_legend.html
+http://bl.ocks.org/ZJONSSON/3918369

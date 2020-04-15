@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>My D3 demo</title>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <script>
+      d3.csv('/data.csv',
+
+       // How to format each row. Since the CSV file has a header, `row` will be
+       // an object with keys derived from the header.
+       function(row) {
+         return {name : row.name, age : +row.age, color : row.color};
+       },
+
+       // Callback to run once all data's loaded and ready.
+       function(data) {
+         // Log the data to the JavaScript console
+         console.log(data);
+         console.log(data.length);
+         console.log(data[0]);
+         console.log(data[0]['name']+", "+data[0]['age']+", "+data[0]['color']);
+         console.log(data[0].name+", "+data[0].age+", "+data[0].color);
+
+         // Compute some interesting results
+         var averageAge = data.reduce(function(prev, curr) {
+           return prev + curr.age;
+         }, 0) / data.length;
+
+         var totalAge = data.reduce(function(prev, curr) {
+           return prev + curr.age;
+         }, 0) ;
+
+         // Also, display it
+         var ulSelection = d3.select('body').append('ul');
+         var valuesSelection =
+             ulSelection.selectAll('li').data(data).enter().append('li').text(
+                 function(d) { return d.age; });
+         var totalSelection =
+             ulSelection.append('li').text('Average: ' + averageAge);
+         console.log("totalSelection:", totalSelection)
+
+         ulSelection.append('li').text('Total: ' + totalAge);
+       });
+    </script>
+  </body>
+</html>

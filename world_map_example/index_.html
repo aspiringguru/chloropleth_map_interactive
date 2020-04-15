@@ -1,0 +1,244 @@
+<html>
+<head>
+  <title>World Choropleth</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="leaflet.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+	<script src="leaflet.js"></script>
+  <script src="d3.js" charset="utf-8"></script>
+  <script src="world.geojson.js"></script>
+  <!-- statesData loaded from censustracts.js -->
+	<style type="text/css">
+	 	html, body, #map{
+	 		height: 100%;
+	 		padding: 0;
+	 		margin: 0;
+	 	}
+
+    .info {
+        padding: 6px 8px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .info h4 {
+        margin: 0 0 5px;
+        color: #777;
+    }
+
+    .legend {
+        line-height: 18px;
+        color: #555;
+    }
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+	</style>
+
+</head>
+<body>
+
+	<div id="map"></map>
+
+	<script type="text/javascript">
+    var world_pop;
+
+    $(document).ready(function() {
+      $.ajax({
+        type: "GET",
+        //url: "world_population.csv",
+        url: "world_population_match_geojson.csv",
+        dataType: "text",
+        success: function(data){load_data(data)}
+      });
+    });
+
+    //now the function that is called after the file was loaded
+
+    function load_data(text){
+      var lines = text.split("\n");
+      console.log("lines.length:", lines.length)
+      console.log(lines[0].split(","))
+      var colnames = lines[0].split(",")
+      var i;
+      var data = []
+      for (i = 0; i < lines.length; i++) {
+        console.log(lines[i].split(","))
+        data.push(lines[i].split(","))
+      }
+      world_pop = data
+      console.log("data.length:", data.length)
+    }
+
+    function return_stats_for_country(country){
+      //horrible inefficient for now but convenient. to be modified.
+      //world_pop[0] = ["name", "code", "pop"]
+      var result = []
+      if (world_pop){
+        for (i = 1; i < world_pop.length; i++) {
+          if (world_pop[i][0]==country){
+            console.log("match @ row=", i.toString())
+            console.log(world_pop[i])
+            result = world_pop[i]
+          }
+        }
+      }
+      return result
+    }
+
+    navigator.geolocation.getCurrentPosition(function(location) {
+      console.log("latitude=", location.coords.latitude)
+      console.log("longitude=", location.coords.longitude)
+    });
+
+  //https://leafletjs.com/reference-1.6.0.html
+  //View(<LatLng> center, <Number> zoom, <Zoom/pan options> options?)
+  //https://leafletjs.com/reference-1.6.0.html#zoom/pan-options
+	//var map = L.map('map').setView([37.8, -96], 4);//set for USA
+  var map = L.map('map').setView([37.8, -96], 2);//change for world
+  console.log("zoom = ", map.getZoom())
+  console.log("Center = ", map.getCenter())
+
+  // openstreetmap.org
+	L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
+  var scale = L.control.scale().addTo(map);
+
+  var info = L.control();
+
+  info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+      this.update();
+      return this._div;
+  };
+
+  // method that we will use to update the control based on feature properties passed
+  info.update = function (props, props2) {
+    var output = "";
+    console.log("info.update called. props=", props)
+    console.log("info.update called. props2=", props2)
+    if (world_pop) {console.log("world_pop exists, world_pop.length:", world_pop.length)}
+    if (props)
+    {
+      console.log("get data for country = ", props.name)
+      console.log("props = ", props)
+      console.log("population", return_stats_for_country(props.name))
+    }
+    if (world_pop && props){
+      console.log("(world_pop && props)=True")
+      nfObject = new Intl.NumberFormat('en-US');
+      output = nfObject.format(return_stats_for_country(props.name)[2]);
+    }else {
+      console.log("(world_pop & props)=False")
+    }
+
+    this._div.innerHTML = '<h4>Country Data</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />'
+        + 'Country Code : '+props2+'<br>'
+        + output + ' people'
+        : 'Hover over a country');
+  };
+
+  info.addTo(map);
+
+
+
+  //colorbrewer2.org  use this to setup list of colours
+  // ['#7f3b08','#b35806','#e08214','#fdb863','#fee0b6','#d8daeb','#b2abd2','#8073ac']
+	function getColor(d) {
+	    return d > 1000 ? '#800026' :
+	           d > 500  ? '#BD0026' :
+	           d > 200  ? '#E31A1C' :
+	           d > 100  ? '#FC4E2A' :
+	           d > 50   ? '#FD8D3C' :
+	           d > 20   ? '#FEB24C' :
+	           d > 10   ? '#FED976' :
+	                      '#FFEDA0';
+	}
+
+	function style(feature) {
+	    return {
+	        fillColor: getColor(feature.properties.density),
+	        weight: 2,
+	        opacity: 1,
+	        color: 'white',
+	        dashArray: '3',
+	        fillOpacity: 0.7
+	    };
+	}
+
+  function highlightFeature(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 5,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+    info.update(layer.feature.properties, layer.feature.id);//layer.feature.id
+  }
+
+  function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+    info.update();
+  }
+
+  var geojson;
+
+	geojson = L.geoJson(statesData, {style: style}).addTo(map);
+
+  function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+  }
+
+  function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+  }
+
+  geojson = L.geoJson(statesData, {
+      style: style,
+      onEachFeature: onEachFeature
+  }).addTo(map);
+
+  /*
+  var legend = L.control({position: 'bottomright'});
+  //bottomright, bottomleft, topleft, topright
+  legend.onAdd = function (map) {
+
+      var div = L.DomUtil.create('div', 'info legend'),
+          grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+          labels = [];
+
+      // loop through our density intervals and generate a label with a colored square for each interval
+      for (var i = 0; i < grades.length; i++) {
+          div.innerHTML +=
+              '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+              grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+      }
+
+      return div;
+  };
+
+  legend.addTo(map);
+  */
+
+
+	</script>
+
+</body>
+</html>

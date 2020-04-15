@@ -17,6 +17,8 @@ Belize,BLZ,275546
 Bosnia and Herzegovina,BIH,3915238
 Bolivia,BOL,9182015
 Burma,MMR,47967266
+Myanmar,MMR,47967266
+Republic of the Union of Myanmar,MMR,47967266
 Benin,BEN,8490301
 Solomon Islands,SLB,472419
 Brazil,BRA,186830759
@@ -25,7 +27,7 @@ Brunei Darussalam,BRN,373831
 Canada,CAN,32270507
 Cambodia,KHM,13955507
 Sri Lanka,LKA,19120763
-Congo,COG,3609851
+Republic of the Congo,COG,3609851
 Democratic Republic of the Congo,COD,58740547
 Burundi,BDI,7858791
 China,CHN,1312978855
@@ -60,8 +62,8 @@ Czech Republic,CZE,10191762
 French Guiana,GUF,192099
 Finland,FIN,5246004
 Fiji,FJI,828046
-Falkland Islands (Malvinas),FLK,2975
-Micronesia, Federated States of,FSM,110058
+Falkland Islands,FLK,2975
+Federated States of Micronesia,FSM,110058
 French Polynesia,PYF,255632
 France,FRA,60990544
 Gambia,GMB,1617029
@@ -86,15 +88,17 @@ Iran (Islamic Republic of),IRN,69420607
 Israel,ISR,6692037
 Italy,ITA,5864636
 Cote d'Ivoire,CIV,18584701
+Ivory Coast,CIV,18584701
+Republic of Côte d'Ivoire,CIV,18584701
 Iraq,IRQ,27995984
 Japan,JPN,127896740
 Jamaica,JAM,2682469
 Jordan,JOR,5544066
 Kenya,KEN,35598952
 Kyrgyzstan,KGZ,5203547
-Korea, Democratic People's Republic of,PRK,23615611
+Democratic People's Republic of Korea,PRK,23615611
 Kiribati,KIR,92003
-Korea, Republic of,KOR,47869837
+Republic of Korea,KOR,47869837
 Kuwait,KWT,2700
 Kazakhstan,KAZ,15210609
 Lao People's Democratic Republic,LAO,566391
@@ -166,7 +170,7 @@ Poland,POL,38195558
 Panama,PAN,3231502
 Portugal,PRT,10528226
 Papua New Guinea,PNG,6069715
-Guinea-Bissau,GNB,1596929
+Guinea Bissau,GNB,1596929
 Qatar,QAT,796186
 Reunion,REU,785159
 Romania,ROU,21627557
@@ -189,8 +193,10 @@ Somalia,SOM,8196395
 Spain,ESP,43397491
 Saint Lucia,LCA,16124
 Sudan,SDN,36899747
+South Sudan,SDS,10975927
 Sweden,SWE,9038049
 Syrian Arab Republic,SYR,18893881
+Syria,SYR,18893881
 Switzerland,CHE,7424389
 Trinidad and Tobago,TTO,1323722
 Thailand,THA,63002911
@@ -207,14 +213,14 @@ United Republic of Tanzania,TZA,38477873
 Uganda,UGA,28947181
 United Kingdom,GBR,60244834
 Ukraine,UKR,46917544
-United States,USA,299846449
+United States of America,USA,299846449
 Burkina Faso,BFA,13933363
 Uruguay,URY,3325727
 Uzbekistan,UZB,26593123
 Saint Vincent and the Grenadines,VCT,119137
 Venezuela,VEN,26725573
 British Virgin Islands,VGB,22016
-Viet Nam,VNM,85028643
+Vietnam,VNM,85028643
 United States Virgin Islands,VIR,111408
 Namibia,NAM,2019677
 Wallis and Futuna Islands,WLF,15079
@@ -236,7 +242,7 @@ Saint Helena,SHN,6399
 San Marino,SMR,30214
 Turks and Caicos Islands,TCA,24459
 Western Sahara,ESH,440428
-Serbia,SRB,9863026
+Republic of Serbia,SRB,9863026
 Holy See (Vatican City),VAT,783
 Svalbard,SJM,0
 Saint Martin,MAF,0

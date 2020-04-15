@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>dataframe demo 1</title>
+  <meta name="description" content="Dataframe demo 1">
+  <meta name="author" content="bmt">
+
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+  <script>
+  var DataFrame = dfjs.DataFrame;
+  // Function that displays text to a <pre> element with id="display"
+  var display = (text,elementSelector)=>document.querySelector(elementSelector).textContent = text;
+
+  // dfjs is the DataFrame object
+  const data = {
+      city:["Seattle","Tacoma","Olympia","Bellingham","Spokane"],
+      high:[65,67,68,62,79],
+      low:[44,44,45,42,50],
+      conditions:["rain","cloudy","rain","cloudy","clear"],
+      windspeed:[15,14,18,21,3],
+      direction:["W","W","W","SW","S"]
+      };
+  const columns = ["city","high","low","conditions","windspeed","direction"];
+  var weatherDF = new DataFrame(data,columns);
+  display(weatherDF.show(),"#weather");
+</script>
+
+</body>
+</html>

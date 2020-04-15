@@ -1,0 +1,247 @@
+name,code,pop,Country,SandP,Moodys,Fitch,DBRS,TE
+Antigua and Barbuda,ATG,83039,,,,,,
+Algeria,DZA,32854159,,,,,,
+Azerbaijan,AZE,8352021,Azerbaijan,BB+,Ba2,BB+,,50.0
+Albania,ALB,3153731,Albania,B+,B1,,,26.0
+Armenia,ARM,3017661,Armenia,,Ba3,BB-�,,16.0
+Angola,AGO,16095214,Angola,CCC+,B3,B-,,23.0
+American Samoa,ASM,64051,,,,,,
+Argentina,ARG,38747148,Argentina,SD,Ca�,CC,CC,12.0
+Australia,AUS,20310208,Australia,AAA�,Aaa,AAA,AAA,100.0
+Bahrain,BHR,724788,Bahrain,B+,B2,BB-,,35.0
+Barbados,BRB,291933,Barbados,B-,Caa1,,,22.0
+Bermuda,BMU,64174,Bermuda,A+�,A2,,,78.0
+Bahamas,BHS,323295,Bahamas,BB+�,Baa3,,,52.0
+Bangladesh,BGD,15328112,Bangladesh,BB-,Ba3,BB-,,40.0
+Belize,BLZ,275546,Belize,B-,B3,,,20.0
+Bosnia and Herzegovina,BIH,3915238,Bosnia and Herzegovina,B�,B3,,,27.0
+Bolivia,BOL,9182015,,,,,,
+Burma,MMR,47967266,,,,,,
+Benin,BEN,8490301,Benin,B+,B2�,B,,32.0
+Solomon Islands,SLB,472419,Solomon Islands,,B3,,,25.0
+Brazil,BRA,186830759,Brazil,BB-,Ba2,BB-,BB (low),42.0
+Bulgaria,BGR,7744591,Bulgaria,BBB�,Baa2�,BBB�,,58.0
+Brunei Darussalam,BRN,373831,,,,,,
+Canada,CAN,32270507,Canada,AAA,Aaa,AAA,AAA,99.0
+Cambodia,KHM,13955507,Cambodia,,B2,,,30.0
+Sri Lanka,LKA,19120763,Sri Lanka,B�,B2,B�,,30.0
+Congo,COG,3609851,Congo,CCC+�,Caa1,,,20.0
+Democratic Republic of the Congo,COD,58740547,,,,,,
+Burundi,BDI,7858791,,,,,,
+China,CHN,1312978855,China,A+,A1,A+,A (high)�,80.0
+Afghanistan,AFG,25067407,,,,,,
+Bhutan,BTN,637013,,,,,,
+Chile,CHL,16295102,Chile,A+,A1,A�,,78.0
+Cayman Islands,CYM,45591,Cayman Islands,,Aa3,,,85.0
+Cameroon,CMR,17795149,Cameroon,B�,B2,B,,30.0
+Chad,TCD,10145609,,,,,,
+Comoros,COM,797902,,,,,,
+Colombia,COL,4494579,Colombia,BBB-�,Baa2,BBB-�,BBB�,57.0
+Costa Rica,CRI,4327228,Costa Rica,B+�,B2,B+�,,35.0
+Central African Republic,CAF,4191429,,,,,,
+Cuba,CUB,11259905,Cuba,,Caa2,,,15.0
+Cape Verde,CPV,506807,,,,,,
+Cook Islands,COK,13984,,,,,,
+Cyprus,CYP,836321,Cyprus,BBB-,Ba2�,BBB-,BBB (low)�,50.0
+Denmark,DNK,5416945,Denmark,AAA,Aaa,AAA,AAA,100.0
+Djibouti,DJI,804206,,,,,,
+Dominica,DMA,67827,,,,,,
+Dominican Republic,DOM,9469601,Dominican Republic,BB-,Ba3,BB-,,38.0
+Ecuador,ECU,13060993,Ecuador,CCC-�,Caa3�,C,,16.0
+Egypt,EGY,72849793,Egypt,B,B2,B+,,30.0
+Ireland,IRL,4143294,Ireland,AA-,A2,A+,A (high)�,78.0
+Equatorial Guinea,GNQ,484098,,,,,,
+Estonia,EST,1344312,Estonia,AA-�,A1,AA-,AA (low),83.0
+Eritrea,ERI,4526722,,,,,,
+El Salvador,SLV,6668356,El Salvador,B-,B3�,B-,,25.0
+Ethiopia,ETH,78985857,Ethiopia,B,B1�,B�,,31.0
+Austria,AUT,8291979,Austria,AA+,Aa1,AA+�,AAA,96.0
+Czech Republic,CZE,10191762,,,,,,
+French Guiana,GUF,192099,,,,,,
+Finland,FIN,5246004,Finland,AA+,Aa1,AA+,AA (high),96.0
+Fiji,FJI,828046,Fiji,BB-,Ba3,,,37.0
+Falkland Islands (Malvinas),FLK,2975,,,,,,
+Federated States of Micronesia,FSM,110058,,,,,,
+French Polynesia,PYF,255632,,,,,,
+France,FRA,60990544,France,AA,Aa2,AA,AAA,92.0
+Gambia,GMB,1617029,,,,,,
+Gabon,GAB,1290693,Gabon,,Caa1�,CCC,,26.0
+Georgia,GEO,4473409,Georgia,BB,Ba2,BB,,43.0
+Ghana,GHA,2253501,Ghana,B,B3�,B,,23.0
+Grenada,GRD,105237,Grenada,SD�,,,,
+Greenland,GRL,57475,,,,,,
+Germany,DEU,82652369,Germany,AAA,Aaa,AAA,AAA,100.0
+Guam,GUM,16857,,,,,,
+Greece,GRC,11099737,Greece,BB-�,B1,BB�,BB (low)�,36.0
+Guatemala,GTM,12709564,Guatemala,BB-,Ba1,BB-,,45.0
+Guinea,GIN,9002656,,,,,,
+Guyana,GUY,739472,,,,,,
+Haiti,HTI,9296291,,,,,,
+Honduras,HND,683411,Honduras,BB-,B1,,,35.0
+Croatia,HRV,455149,Croatia,BBB-,Ba2�,BBB-,,51.0
+Hungary,HUN,10086387,Hungary,BBB�,Baa3,BBB,,58.0
+Iceland,ISL,295732,Iceland,A,A2,A,,73.0
+India,IND,1134403141,India,BBB-,Baa2�,BBB-,BBB,57.0
+Iran (Islamic Republic of),IRN,69420607,,,,,,
+Israel,ISR,6692037,Israel,AA-,A1�,A+,,80.0
+Italy,ITA,5864636,Italy,BBB�,Baa3,BBB�,BBB (high),62.0
+Cote d'Ivoire,CIV,18584701,,,,,,
+Iraq,IRQ,27995984,Iraq,B-,Caa1,B-,,25.0
+Japan,JPN,127896740,Japan,A+�,A1,A,A (high),77.0
+Jamaica,JAM,2682469,Jamaica,B+,B2,B+,,33.0
+Jordan,JOR,5544066,Jordan,B+,B1,BB-,,35.0
+Kenya,KEN,35598952,Kenya,B+,B2,B+,,35.0
+Kyrgyzstan,KGZ,5203547,Kyrgyzstan,NR,B2,,,30.0
+Democratic People's Republic of Korea,PRK,23615611,,,,,,
+Kiribati,KIR,92003,,,,,,
+Republic of Korea,KOR,47869837,,,,,,
+Kuwait,KWT,2700,Kuwait,AA-,Aa2,AA,,88.0
+Kazakhstan,KAZ,15210609,Kazakhstan,BBB-,Baa3�,BBB,,56.0
+Lao People's Democratic Republic,LAO,566391,,,,,,
+Lebanon,LBN,401074,Lebanon,SD,Ca,RD,,11.0
+Latvia,LVA,2301793,Latvia,A+,A3,A-,A (low)�,71.0
+Belarus,BLR,9795287,Belarus,B,B3,B,,26.0
+Lithuania,LTU,3425077,Lithuania,A+,A3�,A,A�,73.0
+Liberia,LBR,3441796,,,,,,
+Slovakia,SVK,5386995,Slovakia,A+,A2,A+,A (high),78.0
+Liechtenstein,LIE,34598,Liechtenstein,AAA,,,,100.0
+Libyan Arab Jamahiriya,LBY,5918217,,,,,,
+Madagascar,MDG,18642586,,,,,,
+Martinique,MTQ,395896,,,,,,
+Mongolia,MNG,2580704,Mongolia,B,B3,B,,26.0
+Montserrat,MSR,5628,Montserrat,BBB-,,,,55.0
+The former Yugoslav Republic of Macedonia,MKD,2033655,,,,,,
+Mali,MLI,1161109,Mali,,B3,,,
+Morocco,MAR,30494991,Morocco,BBB-,Ba1,BBB-,,53.0
+Mauritius,MUS,1241173,Mauritius,,Baa1�,,,65.0
+Mauritania,MRT,2963105,,,,,,
+Malta,MLT,402617,Malta,A-,A2,A+�,A (high),75.0
+Oman,OMN,2507042,Oman,BB-�,Ba2,BB�,,43.0
+Maldives,MDV,295297,Maldives,,B2�,B�,,32.0
+Mexico,MEX,104266392,Mexico,BBB�,A3�,BBB,BBB (high)�,63.0
+Malaysia,MYS,25652985,Malaysia,A-,A3,A-�,,66.0
+Mozambique,MOZ,20532675,Mozambique,CCC+,Caa2,CCC,,14.0
+Malawi,MWI,13226091,,,,,,
+New Caledonia,NCL,234185,,,,,,
+Niue,NIU,1632,,,,,,
+Niger,NER,1326419,Niger,,B3,,,
+Aruba,ABW,102897,Aruba,BBB+,,BB�,,60.0
+Anguilla,AIA,12256,,,,,,
+Belgium,BEL,10398049,Belgium,AA,Aa3,AA-�,AA (high),86.0
+Hong Kong,HKG,7057418,Hong Kong,AA+,Aa3,AA�,,91.0
+Northern Mariana Islands,MNP,80258,,,,,,
+Faroe Islands,FRO,48205,,,,,,
+Andorra,AND,73483,Andorra,BBB�,,BBB+,,62.0
+Gibraltar,GIB,291,,,,,,
+Isle of Man,IMN,78357,Isle of Man,,Aa2�,,,90.0
+Luxembourg,LUX,456613,Luxembourg,AAA,Aaa,AAA,AAA,100.0
+Macau,MAC,47309,,,,,,
+Monaco,MCO,325,,,,,,
+Palestine,PSE,3762005,,,,,,
+Montenegro,MNE,607969,Montenegro,B+,B1,,,35.0
+Mayotte,MYT,0,,,,,,
+Åland Islands,ALA,0,,,,,,
+Norfolk Island,NFK,0,,,,,,
+Cocos (Keeling) Islands,CCK,0,,,,,,
+Antarctica,ATA,0,,,,,,
+Bouvet Island,BVT,0,,,,,,
+French Southern and Antarctic Lands,ATF,0,,,,,,
+Heard Island and McDonald Islands,HMD,0,,,,,,
+British Indian Ocean Territory,IOT,0,,,,,,
+Christmas Island,CXR,0,,,,,,
+United States Minor Outlying Islands,UMI,0,,,,,,
+Vanuatu,VUT,215366,,,,,,
+Nigeria,NGA,141356083,Nigeria,B-,B2�,B�,,30.0
+Netherlands,NLD,1632769,Netherlands,AAA,Aaa,AAA,AAA,100.0
+Norway,NOR,4638836,Norway,AAA,Aaa,AAA,AAA,99.0
+Nepal,NPL,27093656,,,,,,
+Nauru,NRU,10111,,,,,,
+Suriname,SUR,452468,Suriname,CCC+�,B2,CCC,,26.0
+Nicaragua,NIC,5462539,Nicaragua,B-,B3,B-,,26.0
+New Zealand,NZL,4097112,New Zealand,AA�,Aaa,AA�,,93.0
+Paraguay,PRY,5904342,Paraguay,BB,Ba1,BB+,,46.0
+Peru,PER,27274266,Peru,BBB+,A3,BBB+,,65.0
+Pakistan,PAK,158080591,Pakistan,B-,B3,B-,,25.0
+Poland,POL,38195558,Poland,A-,A2,A-,A,71.0
+Panama,PAN,3231502,Panama,BBB+,Baa1,BBB�,,63.0
+Portugal,PRT,10528226,Portugal,BBB�,Baa3�,BBB�,BBB (high),71.0
+Papua New Guinea,PNG,6069715,Papua New Guinea,B,B2,,,30.0
+Guinea-Bissau,GNB,1596929,,,,,,
+Qatar,QAT,796186,Qatar,AA-,Aa3,AA-,,85.0
+Reunion,REU,785159,,,,,,
+Romania,ROU,21627557,Romania,BBB-�,Baa3,BBB-,,55.0
+Republic of Moldova,MDA,3876661,,,,,,
+Philippines,PHL,84566163,Philippines,BBB+,Baa2,BBB�,,61.0
+Puerto Rico,PRI,3946779,Puerto Rico,D�,,,,0.0
+Russia,RUS,143953092,,,,,,
+Rwanda,RWA,9233793,Rwanda,B+,B2,B+,,31.0
+Saudi Arabia,SAU,2361236,Saudi Arabia,A-,A1,A,,76.0
+Saint Kitts and Nevis,KNA,49138,,,,,,
+Seychelles,SYC,85532,Seychelles,,,BB,,40.0
+South Africa,ZAF,47938663,South Africa,BB�,Ba1�,BB�,,48.0
+Lesotho,LSO,1980831,Lesotho,,,B,,35.0
+Botswana,BWA,1835938,Botswana,BBB+,A2,,,72.0
+Senegal,SEN,1177034,Senegal,B+,Ba3,,,37.0
+Slovenia,SVN,1999425,Slovenia,AA-,Baa1�,A,A (high),75.0
+Sierra Leone,SLE,5586403,,,,,,
+Singapore,SGP,4327468,Singapore,AAA,Aaa,AAA,AAA,98.0
+Somalia,SOM,8196395,,,,,,
+Spain,ESP,43397491,Spain,A,Baa1,A-,A�,70.0
+Saint Lucia,LCA,16124,,,,,,
+Sudan,SDN,36899747,,,,,,
+Sweden,SWE,9038049,Sweden,AAA,Aaa,AAA,AAA,99.0
+Syrian Arab Republic,SYR,18893881,,,,,,
+Switzerland,CHE,7424389,Switzerland,AAA,Aaa,AAA,AAA,100.0
+Trinidad and Tobago,TTO,1323722,Trinidad and Tobago,BBB-,Ba1,,,55.0
+Thailand,THA,63002911,Thailand,BBB+�,Baa1�,BBB+,,65.0
+Tajikistan,TJK,6550213,Tajikistan,B-,B3�,,,25.0
+Tokelau,TKL,1401,,,,,,
+Tonga,TON,99361,,,,,,
+Togo,TGO,6238572,Togo,B,B3,,,30.0
+Sao Tome and Principe,STP,152622,,,,,,
+Tunisia,TUN,10104685,Tunisia,,B2,B+�,,31.0
+Turkey,TUR,72969723,Turkey,B+,B1�,BB-,BB (high)�,36.0
+Tuvalu,TUV,10441,,,,,,
+Turkmenistan,TKM,4833266,,,,,,
+United Republic of Tanzania,TZA,38477873,,,,,,
+Uganda,UGA,28947181,Uganda,B,B2,B+,,33.0
+United Kingdom,GBR,60244834,,,,,,
+Ukraine,UKR,46917544,Ukraine,B,Caa1�,B�,,26.0
+United States,USA,299846449,,,,,,
+Burkina Faso,BFA,13933363,Burkina Faso,B,,,,25.0
+Uruguay,URY,3325727,Uruguay,BBB,Baa2,BBB-�,BBB (low),55.0
+Uzbekistan,UZB,26593123,Uzbekistan,BB-,B1,BB-,,40.0
+Saint Vincent and the Grenadines,VCT,119137,,,,,,
+Venezuela,VEN,26725573,,,,,,
+British Virgin Islands,VGB,22016,,,,,,
+Viet Nam,VNM,85028643,,,,,,
+United States Virgin Islands,VIR,111408,,,,,,
+Namibia,NAM,2019677,Namibia,,Ba2,BB,,47.0
+Wallis and Futuna Islands,WLF,15079,,,,,,
+Samoa,WSM,183845,,,,,,
+Swaziland,SWZ,1124529,,,,,,
+Yemen,YEM,21095679,,,,,,
+Zambia,ZMB,11478317,Zambia,CCC�,Ca,CCC�,,30.0
+Zimbabwe,ZWE,13119679,,,,,,
+Indonesia,IDN,226063044,Indonesia,BBB,Baa2,BBB,,58.0
+Guadeloupe,GLP,438403,,,,,,
+Netherlands Antilles,ANT,186392,,,,,,
+United Arab Emirates,ARE,4104291,United Arab Emirates,AA,Aa2,AA,,90.0
+Timor-Leste,TLS,1067285,,,,,,
+Pitcairn Islands,PCN,5,,,,,,
+Palau,PLW,20127,,,,,,
+Marshall Islands,MHL,5672,,,,,,
+Saint Pierre and Miquelon,SPM,6346,,,,,,
+Saint Helena,SHN,6399,,,,,,
+San Marino,SMR,30214,San Marino,,,BBB-�,,55.0
+Turks and Caicos Islands,TCA,24459,,,,,,
+Western Sahara,ESH,440428,,,,,,
+Serbia,SRB,9863026,Serbia,BB+�,Ba3�,BB+,,45.0
+Holy See (Vatican City),VAT,783,,,,,,
+Svalbard,SJM,0,,,,,,
+Saint Martin,MAF,0,,,,,,
+Saint Barthelemy,BLM,0,,,,,,
+Guernsey,GGY,0,,,,,,
+Jersey,JEY,0,,,,,,
+South Georgia South Sandwich Islands,SGS,0,,,,,,
+Taiwan,TWN,0,,,,,,

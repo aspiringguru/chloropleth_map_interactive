@@ -1,0 +1,36 @@
+<!-- https://www.d3-graph-gallery.com/graph/choropleth_hover_effect.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>d3 world map example</title>
+  <meta name="description" content="d3 map">
+  <meta name="author" content="d3 map">
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</head>
+<body>
+  <!-- Create an element where the map will take place -->
+<svg id="my_map" width="800" height="600"></svg><br>
+<svg id="my_chart" width="800" height="600"></svg><br>
+<div id="country_name"></div><br>
+<div id="country_code"></div><br>
+<div id="population"></div><br>
+<div id="SandP"></div><br>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="geoMercator">geoMercator</option>
+  <option value="geoLoximuthal">geoLoximuthal</option>
+  <option value="geoLittrow">geoLittrow</option>
+  <option value="geoLaskowski">geoLaskowski</option>
+  <option value="geoEquirectangular">geoEquirectangular</option>
+  <option value="geoMiller">geoMiller</option>
+</select><br>
+<p id="demo"></p>
+<script src="get_data_draw_map.js"></script>
+</body>
+
+</html>
