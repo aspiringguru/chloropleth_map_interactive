@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>fetch json</title>
+  <meta name="description" content="fetch json">
+  <meta name="author" content="SitePoint">
+</head>
+
+<body>
+  <script>
+    // Replace ./data.json with your JSON feed
+    fetch('./data.json')
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        // Work with JSON data here
+        console.log(data)
+      })
+      .catch(err => {
+        // Do something for an error here
+        console.log("catch err")
+        console.log("err:", err)
+      })
+  </script>
+</body>
+</html>

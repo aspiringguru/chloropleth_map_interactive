@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  </style>
+</head>
+
+<body>
+  <div id="result"></div>
+  <script>
+    //http://stackoverflow.com/questions/9922101/get-json-data-from-external-url-and-display-it-in-a-div-as-plain-text
+      var getJSON = function(url, callback) {
+          var xhr = new XMLHttpRequest();
+          xhr.open('get', url, true);
+          xhr.responseType = 'json';
+          xhr.onload = function() {
+            var status = xhr.status;
+            if (status == 200) {
+              callback(null, xhr.response);
+            } else {
+              callback(status);
+            }
+          };
+          xhr.send();
+      };
+
+getJSON('https://api.github.com/users/mralexgray/repos', function(err, data) {
+  if (err != null) {
+    console.log('Something went wrong: ' + err);
+  } else {
+    console.log('Your Json result is:  ' + data)
+    console.log('data.length:  ' + data.length)
+    for (a in data) {
+      result.innerText = result.innerText + data[a].name + "\n";
+    }
+    //result.innerText = data[0].id;
+  }
+});
+
+		//http://stackoverflow.com/questions/8292050/is-there-any-publically-accessible-json-data-source-to-test-with-real-world-data
+    //https://api.github.com/users/mralexgray/repos
+  </script>
+</body>

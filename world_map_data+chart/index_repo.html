@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Maps</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mychart.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand mr-3">Data Maps</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link active">Home</a>
+                  <!-- <a href="#" class="nav-item nav-link">Contact</a>-->
+              </div>
+              <!--<div class="navbar-nav ml-auto">
+                  <a href="#" class="nav-item nav-link">Register</a>
+                  <a href="#" class="nav-item nav-link">Login</a>
+              </div> -->
+          </div>
+      </div>
+  </nav>
+<div class="container">
+    <div class="row" width="800" height="600">
+      <svg id="my_map" width="800" height="600"></svg>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <h2>Country info</h2>
+            <div id="country_name">country_name</div>
+            <div id="country_code">country_code</div>
+            <div id="population">population</div>
+            <select id="mySelect" onchange="myFunction()">
+              <option value="geoMercator">geoMercator</option>
+              <option value="geoLoximuthal">geoLoximuthal</option>
+              <option value="geoLittrow">geoLittrow</option>
+              <option value="geoLaskowski">geoLaskowski</option>
+              <option value="geoEquirectangular">geoEquirectangular</option>
+              <option value="geoMiller">geoMiller</option>
+            </select><br>
+            <p id="demo"></p>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <h2>Finance</h2>
+            <div id="SandP">SandP</div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <h2>COVID data</h2>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <h1>Covid Plot</h1>
+        <h2>(demo only)</h2>
+        <div id='chart1'></div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; 2020 Aspiringguru</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="#" class="text-dark">Terms of Use</a>
+                <span class="text-muted mx-2">|</span>
+                <a href="#" class="text-dark">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/get_data_draw_map.js"></script>
+<script src="js/d3_chart1.js"></script>
+</body>
+</html>
