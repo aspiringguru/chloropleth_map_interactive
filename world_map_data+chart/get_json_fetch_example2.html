@@ -10,15 +10,25 @@
 </head>
 
 <body>
+  <div id="result"></div>
+
   <script>
     // Replace ./data.json with your JSON feed
-    fetch('./data.json')
+    fetch('https://api.github.com/users/mralexgray/repos')
       .then(response => {
         return response.json()
       })
       .then(data => {
         // Work with JSON data here
-        console.log(data)
+        console.log("data:\m",data)
+        console.log("data.length:",data.length)
+        for (i=0; i<data.length; i++){
+          //console.log("data["+i.toString()+"]:",data[i])
+          console.log("data["+i.toString()+"].name:",data[i].name)
+          result.innerText = result.innerText + data[i].name + "\n";
+        }
+        //console.log("data['glossary']:", data['glossary'])
+        //console.log("data['glossary']['title']:", data['glossary']['title'])
       })
       .catch(err => {
         // Do something for an error here

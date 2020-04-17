@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>fetch json</title>
+  <meta name="description" content="fetch json">
+  <meta name="author" content="SitePoint">
+  <style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="result"></div>
+  <div id="my_data_table"></div>
+  <script>
+    elem_table = document.getElementById("my_data_table");
+    elem_table_html = elem_table.innerHTML;
+    var data_cleaned = [];
+    // Replace ./data.json with your JSON feed
+    url = 'https://covid19-server.chrismichael.now.sh/api/v1/AllCasesInEurope/'
+    //function to populate table
+    function data_to_table(data) {
+      elem_table_html = "<table>"
+      elem_table_html += "<thead> "
+        +"<tr>"
+        + " <th>Country</th>"
+        + " <th>Cases</th>"
+        + " <th>Deaths</th>"
+        + " <th>Cases/100k</th>"
+        + " <th>Deaths/100k</th>"
+        + "</tr>"
+      +"</thead>"
+      for (i=0; i<data.length-1; i++){
+        //console.log("data["+i.toString()+"]['cases']:", typeof data[i]['cases'])
+        //console.log("data["+i.toString()+"]['casesp100k']:", typeof data[i]['casesp100k'])
+        //console.log("data["+i.toString()+"]['deathsp100k']:", typeof data[i]['deathsp100k'])
+        console.log("data["+i.toString()+"]:", data[i])
+        elem_table_html += "<tr>"
+          + "<td>"+data[i]['country']+"</td>"
+          + "<td>"+data[i]['cases'].toLocaleString()+"</td>"
+          + "<td>"+data[i]['deaths'].toLocaleString()+"</td>"
+          + "<td>"+data[i]['casesp100k'].toLocaleString(undefined,
+                { minimumFractionDigits: 2, maximumFractionDigits: 2 })+"</td>"
+          + "<td>"+data[i]['deathsp100k'].toLocaleString(undefined,
+                { minimumFractionDigits: 2, maximumFractionDigits: 2 })+"</td>"
+          + "</tr>"
+      }
+      elem_table_html += "<tr>"
+        + "<td>"+data[i]['country']+"</td>"
+        + "<td>"+data[i]['cases'].toLocaleString()+"</td>"
+        + "<td>"+data[i]['deaths'].toLocaleString()+"</td>"
+        + "<td colspan='2'></td>"
+        + "</tr>"
+      elem_table_html += "</table>"
+      return elem_table_html
+    }
+    //
+    fetch(url)
+      .then(response => {
+        console.log("fetching ",url)
+        return response.json()
+      })
+      .then(data => {
+        // Work with JSON data here
+        console.log("data:\m",data.data[0].table[0])
+        console.log("data.data[0].table.length:",data.data[0].table[0].length)
+        my_data = data.data[0].table[0]
+        for (i=0; i<my_data.length; i++){
+          //console.log("data["+i.toString()+"]:",data[i])
+          console.log("my_data["+i.toString()+"]:",my_data[i])
+          console.log("Cases", my_data[i]["Cases"])
+          console.log("Deaths", my_data[i]["Deaths"])
+          console.log("Reported cases per 100 000 population", my_data[i]["Reported cases per 100 000 population"])
+          console.log("Deaths cases per 100 000 population", my_data[i]["Deaths cases per 100 000 population"])
+          console.log("Country", my_data[i]["Country"])
+          data_cleaned.push({
+              "cases":parseInt(my_data[i]["Cases"]),
+              "deaths":parseInt(my_data[i]["Deaths"]),
+              "casesp100k":parseFloat(my_data[i]["Reported cases per 100 000 population"]),
+              "deathsp100k":parseFloat(my_data[i]["Deaths cases per 100 000 population"]),
+              "country":my_data[i]["Country"]})
+        }
+        console.log("data_cleaned.length\n", data_cleaned.length)
+        console.log("data_cleaned\n", data_cleaned)
+        elem_table.innerHTML = data_to_table(data_cleaned)
+        //console.log("data['glossary']:", data['glossary'])
+        //console.log("data, ['glossary']['title']:", data['glossary']['title'])
+      })
+      .catch(err => {
+        // Do something for an error here
+        console.log("catch err")
+        console.log("err:", err)
+      })
+  </script>
+</body>
+</html>
